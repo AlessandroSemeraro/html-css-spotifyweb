@@ -1,0 +1,90 @@
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #080B12;
+}
+
+footer{
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(144, 144, 144);
+}
+
+.container-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 4rem);
+    width: 7%;
+    border: 1px solid magenta;
+    background-color: rgb(236, 0, 0);
+    position: absolute;
+    
+}
+
+.container-main{
+    width: calc( 100vw - 7vw);
+    height: calc( 100vh - 10vh);
+    margin-left: 7vw;
+    border: 2px solid magenta;
+}
+
+.container-upgrade-section{
+    height: 10vh ;
+    width: calc(100vw - 7vw);
+    background-color: #080B12;
+    border: 3px solid magenta;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+}
+
+.container-navbar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10vh;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    color: lightgray;
+    border: 3px solid magenta;
+    background-color: #141922;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button-upgrade{
+    font-size: 10px;
+    font-weight: 600;
+    padding:.9rem 3rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    color: white;
+    border: 1px white solid;
+    margin-right: 1rem;
+    background-color: #141922;
+}
+
+.container-songs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5rem 1rem 0 2rem;
+}
+
+.row-section-songs{
+    height: 20vh;
+    width: 100%;
+    border: 2px solid magenta;
+}
