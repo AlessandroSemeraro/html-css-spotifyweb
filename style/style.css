@@ -12,6 +12,10 @@ ul{
     list-style-type: none;
 }
 
+h3{
+    font-size: 0.8rem;
+}
+
 /*-------------------------------BODY----------------------------------*/
 
 .container-flex{
@@ -71,6 +75,10 @@ header{
 }
 
 .font-li{
+    display: none;
+}
+
+.container-playlist{
     display: none;
 }
 /*---------------------------------MAIN------------------------------*/
@@ -289,5 +297,33 @@ footer{
         font-size: 0.7rem;
         margin-left: 0.4rem;
         vertical-align: middle;
+    }
+
+    .font-li-big{
+        font-size: 0.8rem;
+        vertical-align: super;
+        margin-left: 0.4rem;
+        font-weight: 700;
+    }
+
+    .font-li-small{
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+
+    .container-playlist{
+        padding-top: 1rem;
+    }
+
+    .li-padding-bottom{
+        padding-bottom: 0.8rem;
+    }
+
+    .li-padding-top{
+        padding-top: 0.4rem;
+    }
+
+    .fa-size{
+        font-size: 2rem;
     }
 }
