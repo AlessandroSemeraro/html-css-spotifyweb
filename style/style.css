@@ -59,7 +59,13 @@ header{
 .size-icon-arrow{
     font-size: 0.8rem;
     font-weight: lighter;
-    padding-bottom: 1rem;
+    padding-bottom: .4rem;
+}
+
+.size-icon-user{
+    font-size: 1.2rem;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
 }
 
 .wrap-logo-spotify{
@@ -70,7 +76,7 @@ header{
     font-size: 1.5rem;
 }
 
-.display-none-title{
+.display-none-header{
     display: none;
 }
 
@@ -283,8 +289,8 @@ footer{
         margin-right: 0.4rem;
     }
 
-    .display-none-title{
-        display: inline;
+    .display-none-header{
+        display: initial;
     }
 
     .font-size-title{
@@ -309,6 +315,7 @@ footer{
     .font-li-small{
         font-size: 0.6rem;
         font-weight: 700;
+        vertical-align: middle;
     }
 
     .container-playlist{
@@ -325,5 +332,14 @@ footer{
 
     .fa-size{
         font-size: 2rem;
+    }
+
+    .margin-left-header-span{
+        margin-left: 0.5rem;
+    }
+
+    .border-bottom-header{
+        border-bottom: 1px solid gray;
+        width: 8rem;
     }
 }
