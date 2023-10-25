@@ -26,6 +26,29 @@ header{
     align-items: center;
 }
 
+.col-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem 0;
+}
+
+.int-col-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.size-icon{
+    font-size: 1.2rem;
+    padding-bottom: 0.4rem;
+}
+
+.wrap-logo-spotify{
+    padding-bottom: 0.1rem;
+}
+
+
 /*---------------------------------MAIN------------------------------*/
 
 main{
@@ -169,4 +192,35 @@ footer{
     width: 100%;
     background-color:#282828;
     border: 1px solid blue;
+}
+
+
+
+
+@media screen and (min-width: 576px){
+    header{
+        width: 10rem;
+        height: calc(100vh - 8rem);
+        border: 1px solid magenta;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;   
+    }
+
+    main{
+        width: calc(100% - 10rem);
+        border: 1px solid magenta;
+        height: calc(100vh - 8rem);
+        overflow-y: auto;
+    }
+
+    .container-upgrade{
+        height: 4rem;
+        width: calc(100% - 10rem);
+        border: 1px solid blue;
+        position: fixed;
+    }
+
+
 }
