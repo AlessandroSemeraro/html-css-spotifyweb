@@ -236,19 +236,107 @@ footer{
 }
 
 .container-footer{
-    background-color: #282828;
+    height: 100%;
+    padding: 0 0.7rem;
+    display: flex;
+    align-items: center;
 }
-
 
 .row-footer{
+    width: calc(100% / 3);
+    height: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid magenta;
 }
 
-.row-footer-left{
+.column-middle-footer{
+    border: 1px solid magenta;
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.row-middle-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-middle-footer-sb{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
 }
 
+.box-img-footer{
+    width: 2rem;
+    height: 2rem;
+}
+
+.margin-left-album-footer{
+    margin-left: 0.5rem;
+}
+
+.font-album-footer{
+    font-size: 0.7rem;
+}
+
+.font-weight-album-footer{
+    font-weight: 700;
+}
+
+.column-footer-row-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.padding-left-row-footer{
+    padding-left: 2rem;
+}
+
+.margin-bottom-icon-footer{
+    margin-bottom: 0.3rem;
+}
+
+.icon-size-play{
+    font-size: 2rem;
+}
+
+.bar-song-container{
+    height: 0.2rem;
+    width: 60%;
+    background-color: #909090;
+    border-radius: 10px;
+}
+
+.bar-song{
+    height: 0.2rem;
+    width: 10%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.bar-audio-container{
+    height: 0.2rem;
+    width: 40%;
+    background-color: #909090;
+    border-radius: 10px;
+}
+
+.bar-audio{
+    height: 0.2rem;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*------------------------------!!!!!!!!!!!!--------------------------------------*/
 
 @media screen and (min-width: 576px){
     header{
@@ -354,5 +442,9 @@ footer{
     .border-bottom-header{
         border-bottom: 1px solid gray;
         width: 8rem;
+    }
+
+    .box-img-footer{
+        width: 12%;
     }
 }
