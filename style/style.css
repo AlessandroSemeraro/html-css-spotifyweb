@@ -240,15 +240,31 @@ footer{
     padding: 0 0.7rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .row-footer{
-    width: calc(100% / 3);
+    width: 12rem;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    border: 1px solid magenta;
+}
+
+
+.box-song-played{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.box-song-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 4rem;
+    padding-left: 6%;
 }
 
 .row-footer-se{
@@ -257,12 +273,10 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid magenta;
 }
 
 .column-middle-footer{
-    border: 1px solid magenta;
-    width: calc(100% / 3);
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -286,12 +300,13 @@ footer{
 }
 
 .box-img-footer{
-    width: 2.5rem;
+    width: 2.1rem;
+    height: 2.1rem;
 }
 
 
 .font-album-footer{
-    font-size: 0.7rem;
+    font-size: 0.65rem;
 }
 
 .font-weight-album-footer{
@@ -304,7 +319,7 @@ footer{
 }
 
 .padding-left-row-footer{
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 
 .margin-bottom-icon-footer{
@@ -321,7 +336,7 @@ footer{
 
 .bar-song-container{
     height: 0.2rem;
-    width: 60%;
+    width: 55%;
     background-color: #909090;
     border-radius: 10px;
     margin: 0 0.5rem;
@@ -351,6 +366,8 @@ footer{
 .gap-row-footer{
     gap: 0 0.2rem;
 }
+
+
 
 /*------------------------------!!!!!!!!!!!!--------------------------------------*/
 
@@ -461,7 +478,8 @@ footer{
     }
 
     .box-img-footer{
-        width: 3rem;
+        width: 2.7rem;
+        height: 2.7rem;
     }
 
     .column-middle-footer{
@@ -471,6 +489,29 @@ footer{
     .box-row-middle-footer{ 
         width: 13rem;
         height: 2rem;
+    }
+
+    .row-footer-se{
+        width: 13rem;
+    }
+
+}   
+
+
+@media screen and (min-width: 768px){
+    .row-footer{
+        width: 12rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column-footer-row-left{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .margin-left-icon-footer{
+        margin-left: 1rem;
     }
 
    
