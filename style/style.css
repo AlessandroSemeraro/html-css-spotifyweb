@@ -186,6 +186,13 @@ h2{
     gap: 0.3rem;
 }
 
+.row-cards-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
 .card{
     height: 20rem;
     width: 12rem;
@@ -222,6 +229,23 @@ h2{
 .font-size-subtitle{
     font-size: 0.9rem;
     font-weight: 600;
+}
+
+.circle{
+    height:11rem;
+    width:11rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-lanadelrey{
+    background-image:url(../img/youg.jpeg);
+}
+
+.bg-einaudi{
+    background-image:url(../img/einaudi.jpeg) ;
 }
 
 
@@ -514,5 +538,6 @@ footer{
         margin-left: 1rem;
     }
 
-   
+    
 }
+
