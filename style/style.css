@@ -127,6 +127,10 @@ main{
     text-transform: uppercase;
 }
 
+.align-center{
+    text-align: center;
+}
+
 /*------------------------------NAV----------------------------------*/
 
 .padding-nav{
@@ -194,7 +198,6 @@ h2{
 }
 
 .card{
-    height: 20rem;
     width: 12rem;
     border: 1px solid magenta;
 }
@@ -259,6 +262,17 @@ h2{
     background-image:url(../img/einaudi.jpeg) ;
 }
 
+.album-title{
+    margin-top: 1.75rem;
+    font-size: 1rem;
+}
+
+.album-subtitle{
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    color: gray;
+    
+}
 
 /*----------------------------------FOOTER---------------------------*/
 
