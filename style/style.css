@@ -26,7 +26,6 @@ h3{
 header{
     width: 10%;
     height: calc(100vh - 5rem);
-    border: 1px solid magenta;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,8 +89,6 @@ header{
 /*---------------------------------MAIN------------------------------*/
 
 main{
-    width: 90%;
-    border: 1px solid magenta;
     height: calc(100vh - 5rem);
     overflow-y: auto;
     background-color: #080B12;
@@ -102,8 +99,8 @@ main{
 .container-upgrade{
     height: 4rem;
     width: 90%;
-    border: 1px solid blue;
     position: fixed;
+    z-index: 0;
     background-color: #080B12;
 }
 
@@ -140,7 +137,6 @@ main{
 .container-nav{
     height: 4rem;
     width: 100%;
-    border: 1px solid green;
 }
 
 .container-nav-flex{
@@ -165,115 +161,71 @@ main{
 
 /*---------------------------------SECTION ALBUMS-------------------------*/
 
-h2{
-    font-size: 1.4rem;
-}
-
 .container-albums{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem 1rem;
+    padding: 2rem;
 }
 
-.wrap-title-container-albums{
-    padding-bottom: 1.5rem;
-}
-
-.wrap-title-section-albums{
-    padding: 2rem 0;
-}
-
-.row-cards{
+.discs{
     display: flex;
     flex-wrap: wrap;
-    gap: 0.3rem;
+    margin-bottom: 2rem;
 }
 
-.row-cards-section{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 0.3rem;
+.disc-item{
+    width: calc(96% / 2);
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
 }
 
-.card{
-    width: 12rem;
-    border: 1px solid magenta;
+main h3,.img-album,p{
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
-.card-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.box-img{
+.img-album{
     width: 100%;
-    height: 11rem;
 }
 
-.box-img-flex{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.box-img-quarter{
-    width: 50%;
-    height: 50%%;
-    border: 1px solid magenta;
-}
-
-.box-img-circle{
-    width: 100%;
-    height: 11rem;
+.img-album-circle{
+    width:100%;
     border-radius: 100%;
 }
 
-.img-width{
+
+main div.disc-item div.disc-overlay{
+    display: none;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    font-size: 4rem;
 }
 
-.subtitle-element-margin-bottom{
-    margin-bottom: 0.5rem
+.disc-overlay:hover{
+    display: flex;
 }
 
-.font-size-subtitle{
-    font-size: 0.9rem;
+.margin-bottom-title{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.font-subtitle {
+    color: gray;
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+
+.font-main-subtitle{
+    color: gray;
+    font-family: 0.8rem;
     font-weight: 600;
 }
-
-.circle{
-    height:11rem;
-    width:11rem;
-    border-radius: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.bg-lanadelrey{
-    background-image:url(../img/youg.jpeg);
-}
-
-.bg-einaudi{
-    background-image:url(../img/einaudi.jpeg) ;
-}
-
-.album-title{
-    margin-top: 1.75rem;
-    font-size: 1rem;
-}
-
-.album-subtitle{
-    margin-top: 0.5rem;
-    font-size: 0.6rem;
-    color: gray;
-    
-}
-
 /*----------------------------------FOOTER---------------------------*/
 
 footer{
@@ -281,7 +233,6 @@ footer{
     height: 5rem;
     width: 100%;
     background-color:#282828;
-    border: 1px solid blue;
 }
 
 .container-footer{
@@ -423,7 +374,6 @@ footer{
 @media screen and (min-width: 576px){
     header{
         width: 10rem;
-        border: 1px solid magenta;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -445,6 +395,10 @@ footer{
         align-items: flex-start;
     }
 
+   .disc-item{
+    width: calc(100% / 4);
+   }
+
     .wrap-logo-spotify{
         width: 100%;
         height: 4rem;
@@ -456,16 +410,15 @@ footer{
 
     main{
         width: calc(100% - 10rem);
-        border: 1px solid magenta;
         overflow-y: auto;
     }
 
     .container-upgrade{
         height: 4rem;
         width: calc(100% - 10rem);
-        border: 1px solid blue;
         position: fixed;
     }
+
 
     .size-icon-spotify{
         font-size: 2rem;
@@ -522,7 +475,6 @@ footer{
     }
 
     .border-bottom-header{
-        border-bottom: 1px solid gray;
         width: 8rem;
     }
 
@@ -563,6 +515,9 @@ footer{
         margin-left: 1rem;
     }
 
+    .disc-item{
+        width: calc(100% / 6);
+       }
     
 }
 
